@@ -5,6 +5,10 @@
     username: flawnrayen
     password: Rayen123456
 
-- name: Push the Docker image into the repo
-  shell: docker login --username flawnrayen --password Rayen123456 
-  shell: docker push flawnrayen/devops:latest
+- name: Tag and push to docker hub
+  docker_image:
+    name: devops
+    repository: flawnrayen
+    tag: latest
+    push: yes
+

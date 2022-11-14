@@ -7,9 +7,8 @@
 
 - name: Tag and push to docker hub
   docker_image:
-    name: devops
-    repository: flawnrayen
-    tag: latest
+    name: devops:latest
+    repository: flawnrayen/devops
     source: local
     push: yes
 

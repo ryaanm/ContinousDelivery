@@ -10,6 +10,6 @@
     name: devops
     repository: flawnrayen
     tag: latest
-    state: present
+    source: local
     push: yes
 
